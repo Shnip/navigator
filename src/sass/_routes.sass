@@ -1,0 +1,83 @@
+.routes
+  flex-basis: 50%
+
+  &__title
+    margin-bottom: 20px
+
+  &__create
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $green
+    padding: 10px 20px
+
+  &__list-wrapper
+    padding: 20px 20px 30px 20px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    min-height: 150px
+
+  &__list-title
+    margin-bottom: 10px
+    flex-basis: 100%
+    text-align: center
+
+  &__list
+    flex: 0 0 70%
+
+  &__item
+    padding: 20px 5px 20px 20px
+    border-top: 1px solid $green
+    transition: background-color .3s ease-out
+
+  &__item:last-child
+    border-bottom: 1px solid $green
+
+  &__item:hover
+    background-color: $green
+    color: $white
+
+  &__icon
+    line-height: 0
+    cursor: default
+
+  &__form
+    width: 90%
+
+  &__modes
+    margin-bottom: 20px
+    width: 100%
+    display: flex
+
+@media screen and (max-width: 1200px)
+  .routes
+    &__list
+      flex: 0 0 85%
+
+
+@media screen and (max-width: 1024px)
+  .routes
+    &__list
+      flex: 0 0 93%
+
+    &__form
+      width: 95%
+
+@media screen and (max-width: 768px)
+  .routes
+    flex-basis: 100%
+
+    &__list
+      flex: 0 0 100%
+
+    &__form
+      width: 100%
+
+@media screen and (max-width: 480px)
+  .routes
+    &__create
+      padding: 10px 10px
+
+    &__list-wrapper
+      padding: 20px 10px

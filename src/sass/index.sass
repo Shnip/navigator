@@ -1,0 +1,45 @@
+$dark: #343434
+$green: #37c386
+$orange: #f4511e
+$white: #fff
+
+%dark-theme
+  background-color: $dark
+  color: $white
+
+@import "header"
+@import "footer"
+@import "routes"
+@import "map"
+@import "btn"
+@import "form"
+@import "list"
+@import "route-modes"
+
+.container
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+  &__content
+    flex: 1 0 100%
+    display: flex
+    flex-wrap: wrap
+
+.text-thin
+  font-weight: 100
+
+.text-bold
+  font-weight: 700
+
+.title
+  font-family: "Roboto Slab"
+  font-size: 2rem
+  color: $dark
+  margin-top: 0px
+
+  &--white
+    color: $white
+
+.notification-container
+  left: 0
